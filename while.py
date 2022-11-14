@@ -1,7 +1,5 @@
-# Aufgabe 1 – Wiederholte Codeausführung
 import random
-
-
+# Aufgabe 1 – Wiederholte Codeausführung
 count = 1
 while (count <= 5):
     print(count)
