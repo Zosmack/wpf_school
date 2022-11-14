@@ -83,14 +83,20 @@ print(noten/count)
 # Aufgabe 7 – Verschachtelte Schleifen
 inputHöhe = int(input("Höhe?: "))
 inputBreite = int(input("Breite?: "))
-for i in range(0, inputHöhe):
-    for x in range(0, inputBreite):
+counthöhe = 0
+while (counthöhe < inputHöhe):
+    counthöhe += 1
+    countbreite = 0
+    while (countbreite < inputBreite):
+        countbreite += 1
         print("X", end="")
     print("")
 # Aufgabe 8 – Verschachtelte Schleifen
 inputHöhe = int(input("Höhe?: "))
 inputBreite = int(input("Breite?: "))
-for i in range(0, inputHöhe):
+i = 0
+while (i < inputHöhe):
+
     if (i == 0 or i == inputHöhe-1):
         for x in range(0, inputBreite):
             print("X", end="")
@@ -101,3 +107,4 @@ for i in range(0, inputHöhe):
             else:
                 print("X", end="")
     print("")
+    i += 1
