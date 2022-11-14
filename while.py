@@ -96,7 +96,6 @@ inputHöhe = int(input("Höhe?: "))
 inputBreite = int(input("Breite?: "))
 i = 0
 while (i < inputHöhe):
-
     if (i == 0 or i == inputHöhe-1):
         for x in range(0, inputBreite):
             print("X", end="")
