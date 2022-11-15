@@ -85,3 +85,16 @@ if (schaltjahre):
 else:
     print(userInput, "Ist kein Schaltjahr")
 # Aufgabe 7
+userInput = int(input("Wie viele Fahrten?"))
+ohne = userInput*5
+bahn25 = 50+(3.75*userInput)
+bahn50 = 200+(2.5*userInput)
+print(userInput, "Fahrten kosten ohne Bahncard", ohne,
+      "€ mit Bahncard25", bahn25, "€ und mit Bahncard50", bahn50, "€")
+if (ohne < bahn25 and ohne < bahn50):
+    print("Für die gewählten", userInput,
+          "Fahrten ist weder der Kauf einer Bahncard50 noch einer Bahncard25 sinnvoll.")
+if (bahn25 < ohne and bahn25 < bahn50):
+    print("Bahncard25 ist am sinnvollsten")
+if (bahn50 < ohne and bahn50 < bahn25):
+    print("Bahncard50 ist am sinnvollsten")
