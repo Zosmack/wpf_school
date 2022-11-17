@@ -1,3 +1,4 @@
+import math
 # Aufgabe 1
 userInput = input("Ganzzahl?")
 match userInput:
@@ -98,3 +99,18 @@ if (bahn25 < ohne and bahn25 < bahn50):
     print("Bahncard25 ist am sinnvollsten")
 if (bahn50 < ohne and bahn50 < bahn25):
     print("Bahncard50 ist am sinnvollsten")
+# Aufgabe 8:
+a = 0
+while (a == 0):
+    a = int(input("A?: "))
+b = 0
+c = 0
+while (b == 0 and c == 0):
+    b = int(input("B?: "))
+    c = int(input("C?: "))
+b = +(b/a)
+c = -(c/a)
+p = -(b/2)
+q = math.sqrt(((b/2)**2)-(c))
+print(p + q)
+print(p - q)
