@@ -114,3 +114,40 @@ p = -(b/2)
 q = math.sqrt(((b/2)**2)-(c))
 print(p + q)
 print(p - q)
+# Aufgabe 9
+m = int(input("Steigung: "))
+b = int(input("Y-Achsenabschnitt: "))
+print("y=", m, "x +", b)
+xwert = (input("Möchten Sie einen x-Wert angeben?(y): "))
+ywert = (input("Möchten Sie einen y-Wert angeben?(y): "))
+nwert = (input("Möchten Sie die Nullstelle berechnen?(y): "))
+if (xwert == "y" or ywert == "0" or nwert == "y"):
+    if (xwert == "y"):
+        x = int(input("X-Wert: "))
+        print("Y=", m*x+b)
+    if (ywert == "y"):
+        y = int(input("Y-Wert: "))
+        print("X=", (y-b)/m)
+    if (nwert == "y"):
+        print(-b/m)
+else:
+    print("Ende")
+# Aufgabe 10
+a = int(input("a?:"))
+b = int(input("b?:"))
+c = int(input("c?:"))
+if (a < 0):
+    print("Die Funktion nach unten geöffnet")
+else:
+    print("Die Funktion nach oben geöffnet")
+if (a >= 1):
+    print("Die funktion ist gestreckt")
+else:
+    print("Die Funktion ist gestaucht")
+q = (b/2*a)**2-c/a
+if (q > 0):
+    print("Die Funktion hat zwei Nullstellen")
+elif (q == 0):
+    print("Die Funktion hat eine Nullstelle")
+else:
+    print("Die Funktion hat keine Nullstellen")
