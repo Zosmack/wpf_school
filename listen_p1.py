@@ -3,7 +3,6 @@ schuelernamen = ["Jan", "Max", "Fabian"]
 print(schuelernamen)
 for name in schuelernamen:
     print(name)
-
 schuelernamen.count("Jan")
 schuelernamen.append("Tom")
 schuelernamen.extend(["Jonas", "Dioan"])
