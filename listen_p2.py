@@ -104,9 +104,9 @@ def mehrPositiveoderNegativeZahlen(liste):
 zahlenliste = [5, 2, 9, 13, 16, 27, 1, 67, 12, 56]
 # Nun testen wir beide Funktionen mit unserer Beispielliste
 summeDerZahlenliste = summiereAlleZahlenInListe(zahlenliste)
-print("Die Summe aller Zahlen in der Zahlenliste ist " + str(summeDerZahlenliste))
+print("Die Summe aller Zahlen in der Zahlenliste ist ", summeDerZahlenliste)
 groessteZahlInZahlenliste = ermittleGroessteZahlInListe(zahlenliste)
-print("Die größte Zahl in der Zahlenliste ist " + str(groessteZahlInZahlenliste))
+print("Die größte Zahl in der Zahlenliste ist ", str(groessteZahlInZahlenliste))
 print(multipliziereAlleZahlenInListe(zahlenliste))
 print(ermittleKleinsteZahlInListe(zahlenliste))
 print(istListeLeer(zahlenliste))
@@ -117,3 +117,4 @@ print(zaehleZweistelligeZahlen(zahlenliste))
 print(entferneGeradeZahlen(zahlenliste))
 print(sindAlleZahlenPositv(zahlenliste))
 print(mehrPositiveoderNegativeZahlen(zahlenliste))
+print(1, "s")
